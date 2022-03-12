@@ -1,0 +1,24 @@
+.actions {
+   display: flex;
+   align-items: center;
+
+   // .actions__button
+   &__button {
+      &:not(:last-child) {
+         margin-right: 30px;
+      }
+
+      @include pc_992 {
+         &:not(:last-child) {
+            margin-right: 10px;
+         }
+      }
+      @include pc_576 {
+         font-size: 10px;
+
+         &:not(:last-child) {
+            margin-right: 5px;
+         }
+      }
+   }
+}

@@ -1,0 +1,34 @@
+.our-services {
+   padding-bottom: 130px;
+   @include pc_768 {
+      padding-bottom: 30px;
+   }
+   // .our-services__wrapper
+   &__wrapper {
+   }
+   // .our-services__head
+   &__head {
+      max-width: 615px;
+      margin: 0 auto;
+      margin-bottom: 54px;
+      @include pc_576 {
+         margin-bottom: 20px;
+      }
+   }
+   // .our-services__services
+   &__services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      @include pc_992 {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include pc_576 {
+         grid-template-columns: repeat(1, 1fr);
+      }
+   }
+   // .our-services__item
+   &__item {
+   }
+}

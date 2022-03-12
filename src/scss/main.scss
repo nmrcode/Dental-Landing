@@ -1,0 +1,34 @@
+@import "vendors/reset";
+
+//Mixins
+@import "mixins/font-face"; //Подключение шрифтов
+@import "mixins/burger"; // Тройной бургер
+@import "mixins/ad-value"; // Адаптивное свойство
+@import "mixins/breakpoints"; // Брейкпоинты и hover только для пк
+
+//Настройки проекта
+@import "./start";
+@import "./settings";
+
+//Плагины
+
+//Подключение UI компонентов (кнопки, инпуты, формы и тд)
+@import "blocks/ui/buttons";
+@import "blocks/ui/inputs";
+
+// Подключение блоков
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/nav";
+@import "blocks/actions";
+@import "blocks/section-head";
+@import "blocks/you-can-trust";
+@import "blocks/peculiarities";
+@import "blocks/our-services";
+@import "blocks/our-services-item";
+@import "blocks/team";
+@import "blocks/team-item";
+@import "blocks/stats";
+@import "blocks/easy-steps";
+@import "blocks/reviews";
+@import "blocks/footer";

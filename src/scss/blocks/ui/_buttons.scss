@@ -1,0 +1,33 @@
+.btn {
+   display: inline-block;
+   font-weight: 500;
+   font-size: 17px;
+   line-height: 110%;
+   color: $color-white;
+   background-color: $color-accent;
+   padding: 0.8em 1.6em;
+   border-radius: 0.9em;
+   transition: background-color 0.2s ease-in-out;
+   border: transparent;
+   white-space: nowrap;
+   // .btn--light
+
+   &--light {
+      color: $color-accent;
+      background-color: $color-white;
+      border: 1px solid $color-accent;
+      transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+      @media not all and (pointer: coarse) {
+         &:hover {
+            color: $color-white;
+         }
+      }
+   }
+
+   @media not all and (pointer: coarse) {
+      &:hover {
+         background-color: darken($color-accent, 10);
+      }
+   }
+}

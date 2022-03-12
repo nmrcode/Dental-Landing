@@ -1,0 +1,49 @@
+.section-head {
+   // .section-head__name
+   &__name {
+      font-size: 17px;
+      line-height: 110%;
+      margin-bottom: 20px;
+      color: $color-accent;
+      @include pc_768 {
+         margin-bottom: 5px;
+      }
+   }
+
+   // .section-head__title
+   &__title {
+      font-size: 56px;
+      font-weight: 600;
+      line-height: 135%;
+      margin-bottom: 20px;
+
+      &--1 {
+         font-size: 64px;
+      }
+
+      @include pc_992 {
+         font-size: 30px;
+         margin-bottom: 5px;
+      }
+
+      @include pc_768 {
+         font-size: 24px;
+      }
+   }
+
+   // .section-head__subtitle
+   &__subtitle {
+      font-size: 18px;
+      line-height: 170%;
+      @include pc_992 {
+         font-size: 16px;
+      }
+      @include pc_768 {
+         font-size: 12px;
+      }
+   }
+
+   &--center {
+      text-align: center;
+   }
+}
